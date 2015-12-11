@@ -1,0 +1,44 @@
+* {
+	text-align: center;
+}
+
+body {
+	 box-sizing: border-box;
+	 background-color: green;
+	/*background:url('https://wallpaperscraft.com/image/cat_tap_water_drops_drink_thirst_25955_3840x2400.jpg');*/
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-origin: center;
+	height: 100vh;
+
+	/* no-repeat center center fixed; 
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;*/
+}
+header, h3 {
+	background-color: rgba(255,255,255,0.5);
+}
+p{
+	padding: 10px;
+	font-size: 20px;
+}
+button {
+	width: 20%;
+	height: 10%;
+	
+}
+#buttons {
+	margin-top: 30%;
+
+}
+footer {
+	color: white;
+}
+#everything {
+	width: 900px;
+	margin: 0 auto;
+	padding: 20px;
+}

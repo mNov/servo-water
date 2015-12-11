@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" type="text/css" href="bootstrap.css">
+<link rel="stylesheet" type="text/css" href="tesselUI.css">
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+</head>
+
+<body>
+	<div id="everything">
+	<header>
+
+		<h1><scan>Servo Some Water</scan></h1>
+			<p><b>Here at Fullstack Academy, we are all about code, and we are all about getting $*@$ done.  We don't have time for a social life, we don't have time to watch our TV shows, and we certainly don't have time to wait 20 seconds for our water bottles to fill up. So say goodbye to wasting your time holding down a button, and say hello to Servo Some Water, the innovative, super creative water bottle filler extraordinaire.
+			</b></p>
+			<p><b>It's as simple as selecting your water bottle size.</b></p>
+	</header>
+
+	<img src="img/cat.jpg" style="width:304px;height:228px;">
+	<div id="buttons">
+
+		<button class="btn btn-large btn-primary" type="button" type="button" id="8oz"> 8 oz
+		</button>
+		<button class="btn btn-large btn-primary" type="button"type="button" id="20oz"> 20 oz
+		</button>
+		<button class="btn btn-large btn-primary" type="button"type="button" id="32oz"> 32 oz
+		</button>
+	</div>
+	<footer>
+		<p>Created by..., winners of Tessel Hackathon November 2015</p>
+	</footer>
+</div>
+
+<script>
+$(function() {
+
+    $('#8oz').click(function() {
+        $.get('http://192.168.1.236:1337/8')
+    })
+
+    $('#20oz').click(function() {
+        $.get('http://192.168.1.236:1337/20')
+    })
+
+    $('#32oz').click(function() {
+        $.get('http://192.168.1.236:1337/32')
+    })
+})
+</script>
+</body>
+
+</html>
+
+<!--box sizing border box-->
